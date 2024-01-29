@@ -44,8 +44,6 @@ public class Main {
                     StudenManager.searchByName();
                     break;
                 case 6:
-                    System.out.println("Enter id: ");
-                    String id3 = new Scanner(System.in).nextLine();
                     StudenManager.seachById();
                     break;
                 case 7:
