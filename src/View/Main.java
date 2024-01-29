@@ -20,16 +20,7 @@ public class Main {
             int choice = Integer.parseInt(new Scanner(System.in).nextLine());
             switch (choice){
                 case 1:
-                    System.out.println("Enter id: ");
-                    String id = new Scanner(System.in).nextLine();
-                    System.out.println("Enter name: ");
-                    String name = new Scanner(System.in).nextLine();
-                    System.out.println("Enter age: ");
-                    int age = Integer.parseInt(new Scanner(System.in).nextLine());
-                    System.out.println("Enter email: ");
-                    String email = new Scanner(System.in).nextLine();
-                    Student student = new Student(id, name, age, email);
-                    StudenManager.add(student);
+                    StudenManager.add();
                     break;
                 case 2:
                     StudenManager.display();

@@ -5,7 +5,17 @@ import java.util.Scanner;
 
 public class StudenManager {
     static Student[] students = new Student[100];
-    public static void add(Student student) {
+    public static void add() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter id: ");
+        String id = scanner.nextLine();
+        System.out.println("Enter name: ");
+        String name = scanner.nextLine();
+        System.out.println("Enter age: ");
+        int age = Integer.parseInt(scanner.nextLine());
+        System.out.println("Enter email: ");
+        String email = scanner.nextLine();
+        Student student = new Student(id, name, age, email);
         for (int i = 0; i < students.length; i++) {
             if (students[i] == null) {
                 students[i] = student;
